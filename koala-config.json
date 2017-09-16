@@ -1,0 +1,42 @@
+{
+
+    "mappings":[
+
+        {
+
+            "src":"dev-assets/scss",
+
+            "dest":"dist"
+
+        },
+
+        {
+
+            "src":"dev-assets/js",
+
+            "dest":"dist"
+        }
+
+    ],
+
+
+
+    "ignores":["*.json", "*.txt", "*gulpfile.js", "vendor", "dist", "node_modules", "xxtra"],
+
+
+
+    "options": {
+
+        "outputStyle":"compressed",
+
+        "lineComments": false,
+
+        "debugInfo": false,
+
+        "autocompile": false
+
+    },
+
+    "includePaths":["dev-assets/js"]
+
+}
