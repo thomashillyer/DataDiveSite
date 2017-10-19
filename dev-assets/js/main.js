@@ -24,37 +24,37 @@
 });*/
 $("a[href^='#']").on('click', function(e) {
 
-   // prevent default anchor click behavior
-   e.preventDefault();
+    // prevent default anchor click behavior
+    e.preventDefault();
 
-   // store hash
-   var hash = this.hash;
+    // store hash
+    var hash = this.hash;
 
-   var navOffset = $('#nav').height();
+    var navOffset = $('#nav').height();
 
-   // animate
-   $('html, body').animate({
-       scrollTop: $(hash).offset().top - navOffset
-     }, 600, function(){
+    // animate
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top - navOffset
+    }, 600, function() {
 
-       // when done, add hash to url
-       // (default click behaviour)
-       window.location.hash = hash;
-     });
+        // when done, add hash to url
+        // (default click behaviour)
+        window.location.hash = hash;
+    });
 
 });
 
 
 //@koala-prepend "../../vendor/particleground/jquery.particleground.js"
 $('#header-text').particleground({
-  dotColor: '#219AFF',
-  lineColor: '#FFFFFF',
-  particleRadius: 5,
-  density: 10000,
-  proximity: 110,
+    dotColor: '#219AFF',
+    lineColor: '#FFFFFF',
+    /*particleRadius: 5,*/
+    density: 10000,
+    proximity: 110,
 
 });
 
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip(); 
+$(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
 });
