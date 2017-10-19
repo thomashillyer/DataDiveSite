@@ -25,7 +25,7 @@
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template -->
     <link href="dist/main.css" rel="stylesheet">
     <!-- Custom fonts for this template -->
@@ -34,7 +34,7 @@
     <!-- Temporary navbar container fix -->
     <style>
     .navbar-toggler {
-        z-index: 1;
+        z-index: 100;
     }
 
     @media (max-width: 576px) {
@@ -45,14 +45,14 @@
     </style>
 </head>
 
-<body data-spy="scroll" data-target="#main-nav" data-offset="56">
+<body data-spy="scroll" data-target="#main-nav" data-offset="70">
     <!-- Navigation -->
     <nav id="main-nav" class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/logos/datadive500.png" class="img-fluid" style="max-height: 40px;">DataDive</a>
+            <a class="navbar-brand" href="#"><img src="img/logos/datadive500.png" class="" style="max-height: 40px; padding-right: 4px;">DataDive</a>
             <div class="collapse navbar-collapse" id="nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -65,7 +65,7 @@
                         <a class="nav-link" href="#sponsorship">Sponsors</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Opening Soon!">Register</a>
+                        <a class="nav-link" href="registration.html" target="_blank">Register</a>
                     </li>
                 </ul>
             </div>
@@ -74,41 +74,36 @@
     <!-- Header -->
     <header id="header" class="intro-header">
         <div id="header-text" class="container w-100">
-            <div class="row h-100 header-row">
-                <!--<div class="col-sm-10 my-auto mx-auto intro-message">-->
-                <!--<div class="col-sm-10 my-auto pull-left intro-message">
-                    <img src="img/logos/datadive500.png" class="img-fluid">
-                    <h3 class="text-center">A CodeJam Event</h3>
-                    <h3 class="text-center">November 17th - 19th, 2017</h3>
-                </div>-->
-                <div class="col-sm-10 my-auto mx-auto intro-message">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <h1 class="text-left">CodeJam: DataDive</h1>
-                            <h4 class="text-left">November 17th - 19th, 2017</h4>
-                        </div>
-                        <div class="col-sm-4">
-                            <ul class="list-inline intro-social-buttons">
-                                <li class="list-inline-item">
-                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Opening Soon!" class="btn btn-secondary btn-lg"><!--<i class="fa fa-file-code-o fa-fw"></i>--><span class="network-name">Apply Now</span></a>
-                                </li>
-                            </ul>
+            <div class="col-sm-10 mx-auto">
+                <div class="row h-100 header-row">
+                    <div class="w-100 my-auto mx-auto intro-message on-top-canvas">
+                        <div class="col-sm-10 row mx-auto">
+                            <div class="col-sm-8">
+                                <h1 class="text-left">CodeJam: DataDive</h1>
+                                <h4 class="text-left">November 17th - 19th, 2017</h4>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul class="list-inline intro-social-buttons">
+                                    <li class="list-inline-item">
+                                        <a href="registration.html" target="_blank" class="btn btn-secondary btn-lg"><span class="network-name">Apply Now</span></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="down-arrow" class="page-scroll">
-                    <a data-scroll="" href="#down-arrow" style="display:inline-block;">
-                        <svg width="40px" height="40px" viewBox="0 0 40 40" xml:space="preserve">
-                            <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="5,5 20,20 35,5">
-                            </polyline>
-                        </svg>
-                    </a>
+                    <div id="down-arrow" class="page-scroll on-top-canvas">
+                        <a data-scroll="" href="#down-arrow" style="display:inline-block;">
+                            <svg width="40px" height="40px" viewBox="0 0 40 40" xml:space="preserve">
+                                <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="5,5 20,20 35,5">
+                                </polyline>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <!-- Page Content -->
-    <!--<div data-spy="scroll" data-target="#main-nav" data-offset="0" class="main-body">-->
     <section id="about">
         <div class="container">
             <div class="row">
@@ -124,7 +119,7 @@
     <section id="faq" class="content-section-a">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 mx-auto">
+                <div class="col-md-10 mx-auto">
                     <h2 class="section-heading text-center">FAQ</h2>
                     <div class="row">
                         <div class="col-md-4 col-sm-6">
@@ -163,20 +158,20 @@
     <section id="sponsorship" class="content-section-b">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
+                <div class="col-md-10 mx-auto">
                     <h2 class="section-heading text-center">Partners</h2>
                     <div class="row">
-                        <div class="col-md-6 col-sm-4 col-xs-6 mx-auto">
+                        <div class="col-md-4 col-sm-4 col-xs-6 mx-auto">
                             <div class="div_that_holds_logo_div">
                                 <div class="logo_div">
-                                    <a href="https://www.morganstanley.com/" class="" id="" target="_blank"><img class="img-responsive logo" src="img/logos/morganstanley.png" alt="morganstanley"></a>
+                                    <a href="https://www.morganstanley.com/" target="_blank"><img class="img-responsive logo" src="img/logos/morganstanley.png" alt="morganstanley"></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-4 col-xs-6 mx-auto">
+                        <div class="col-md-4 col-sm-4 col-xs-6 mx-auto">
                             <div class="div_that_holds_logo_div">
                                 <div class="logo_div">
-                                    <a href="https://plot.ly/" class="" id="" target="_blank"><img class="img-responsive logo" src="img/logos/plotly.png" alt="plotly"></a>
+                                    <a href="https://plot.ly/" target="_blank"><img class="img-responsive logo" src="img/logos/plotly.png" alt="plotly"></a>
                                 </div>
                             </div>
                         </div>
@@ -189,17 +184,17 @@
                                 </div>
                             </div>
                         </div>-->
-                        <div class="col-md-4 col-sm-3 col-xs-6 mx-auto">
+                        <div class="col-md-3 col-sm-3 col-xs-6 mx-auto">
                             <div class="div_that_holds_logo_div">
                                 <div class="logo_div">
-                                    <a href="https://ecsess.mcgilleus.ca/" class="" id="" target="_blank"><img class="img-responsive logo" src="img/logos/ecsess.png" alt="ecsess"></a>
+                                    <a href="https://ecsess.mcgilleus.ca/" target="_blank"><img class="img-responsive logo" src="img/logos/ecsess.png" alt="ecsess"></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-3 col-xs-6 mx-auto">
+                        <div class="col-md-3 col-sm-3 col-xs-6 mx-auto">
                             <div class="div_that_holds_logo_div">
                                 <div class="logo_div">
-                                    <a href="https://www.hopper.com/" class="" id="" target="_blank"><img class="img-responsive logo" src="img/logos/hopper.png" alt="hopper"></a>
+                                    <a href="https://www.hopper.com/" target="_blank"><img class="img-responsive logo" src="img/logos/hopper.png" alt="hopper"></a>
                                 </div>
                             </div>
                         </div>
@@ -208,7 +203,7 @@
                         <div class="col-md-2 col-sm-3 col-xs-6 mx-auto">
                             <div class="div_that_holds_logo_div">
                                 <div class="logo_div">
-                                    <a href="https://ecsess.mcgilleus.ca/" class="" id="" target="_blank"><img class="img-responsive logo" src="img/logos/ecsess.png" alt="ecsess"></a>
+                                    <a href="https://ecsess.mcgilleus.ca/" target="_blank"><img class="img-responsive logo" src="img/logos/ecsess.png" alt="ecsess"></a>
                                 </div>
                             </div>
                         </div>
@@ -228,28 +223,6 @@
     </section>
     <!-- /.content-section-a -->
     <!-- END SPONSORS -->
-    <!--<aside class="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Connect with us:</h2>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li class="list-inline-item">
-                            <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- /.container --
-    </aside>-->
-    <!-- /.banner -->
-    <!--</div> scroll spy test-->
     <!-- Footer -->
     <footer>
         <div class="container">

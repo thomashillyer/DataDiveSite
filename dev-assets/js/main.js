@@ -2,26 +2,13 @@
 // @koala-prepend "../../vendor/tether/tether.js"
 // @koala-prepend "../../vendor/bootstrap/js/bootstrap.js"
 
-// @koala-prepend "../../vendor/theme/js/jqBootstrapValidation.js"
-// @koala-prepend "../../vendor/theme/js/contact_me.js"
-
+/*
+// no@.knoala-prepend "../../vendor/theme/js/jqBootstrapValidation.js"
+// no@.knoala-prepend "../../vendor/theme/js/contact_me.js"
+*/
 
 
 // Scrolls to the selected menu item on the page
-/*$(function() {
-    $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-        }
-    });
-});*/
 $("a[href^='#']").on('click', function(e) {
 
     // prevent default anchor click behavior
@@ -32,14 +19,16 @@ $("a[href^='#']").on('click', function(e) {
 
     var navOffset = $('#nav').height();
 
+    var scrollOffset = $(hash).offset().top - navOffset;
+
     // animate
     $('html, body').animate({
-        scrollTop: $(hash).offset().top - navOffset
+        scrollTop: scrollOffset
     }, 600, function() {
 
         // when done, add hash to url
         // (default click behaviour)
-        window.location.hash = hash;
+        //window.location.hash = hash;
     });
 
 });

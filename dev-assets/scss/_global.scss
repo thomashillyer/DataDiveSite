@@ -1,47 +1,69 @@
 /*Make <a> tags look like buttons*/
-a:not([href]):not([tabindex]){
-color:#fff;
+
+a:not([href]):not([tabindex]) {
+    color: #fff;
 }
-a:not([href]):not([tabindex]):hover{
-color:#fff;
+
+a:not([href]):not([tabindex]):hover {
+    color: #fff;
 }
 
 #contact {
     padding: 50px 0px;
 }
+
 #about {
     padding: 50px 0px;
 }
 
+.on-top-canvas {
+    z-index: 2;
+}
+
+
+/*.pg-canvas {
+    width: 100%!important;
+}*/
+
 .intro-header {
-	/*position: relative;*/
+    /*position: relative;*/
     padding: 56px 0 0;
-	width: 100%;
-	/*height: 75%;*/
+    width: 100%;
+    /*height: 75%;*/
     /*background: url(../img/bg.png) no-repeat center center;
     background-size: cover;*/
-    background: -moz-linear-gradient(45deg, rgba(103,168,219,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(103,168,219,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, rgba(103,168,219,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67a8db', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: -moz-linear-gradient(45deg, rgba(103, 168, 219, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(103, 168, 219, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(103, 168, 219, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67a8db', endColorstr='#00ffffff', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
 }
-.intro-message{
-	padding-top: 10%;
-	padding-bottom: 10%;
+
+.intro-message {
+    padding-top: 10%;
+    padding-bottom: 10%;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.header-row{
-    z-index: 2;
+
+.header-row {
     position: relative;
 }
+
+
+
 /*#header{
     line-height: 500px;
 }*/
+
 canvas.pg-canvas {
     position: absolute;
     z-index: 1;
 }
-#header-text{
+
+#header-text {
     padding-left: 0;
     padding-right: 0;
     /*padding-top: 70px;*/
@@ -49,6 +71,7 @@ canvas.pg-canvas {
     /*vertical-align: middle;
     display: inline-block;*/
 }
+
 #down-arrow {
     height: 40px;
     position: absolute;
@@ -83,6 +106,6 @@ canvas.pg-canvas {
     right: 0;
     margin: auto;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 80%;
     padding: 0px 5px;
 }
