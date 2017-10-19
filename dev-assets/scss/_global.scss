@@ -1,4 +1,4 @@
-/*Make a tags look like buttons*/
+/*Make <a> tags look like buttons*/
 a:not([href]):not([tabindex]){
 color:#fff;
 }
@@ -9,18 +9,47 @@ color:#fff;
 #contact {
     padding: 50px 0px;
 }
+#about {
+    padding: 50px 0px;
+}
 
 .intro-header {
-	position: relative;
+	/*position: relative;*/
+    padding: 56px 0 0;
 	width: 100%;
-	height: 100%;
+	/*height: 75%;*/
     background: url(../img/bg.png) no-repeat center center;
     background-size: cover;
 
 }
 .intro-message{
-	padding-top: 15%;
-	padding-bottom: 0;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+.header-row{
+    z-index: 2;
+    position: relative;
+}
+/*#header{
+    line-height: 500px;
+}*/
+canvas.pg-canvas {
+    position: absolute;
+    z-index: 1;
+}
+#header-text{
+    padding-left: 0;
+    padding-right: 0;
+    /*padding-top: 70px;*/
+    /*z-index: 2;*/
+    /*vertical-align: middle;
+    display: inline-block;*/
+}
+#down-arrow {
+    height: 40px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
 }
 
 .banner {
@@ -32,7 +61,7 @@ color:#fff;
     position: relative;
     width: 100%;
     padding-bottom: 100%;
-    margin-bottom: 40px;
+    /*margin-bottom: 40px;*/
 }
 
 .logo_div {

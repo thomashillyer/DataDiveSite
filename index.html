@@ -7,6 +7,23 @@
     <meta name="description" content="">
     <meta name="author" content="Thomas Hillyer">
     <title>Data Dive 2017</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -35,142 +52,189 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
-            <a class="navbar-brand" href="#">DataDive</a>
-            <div class="collapse navbar-collapse" id="navbarExample">
+            <a class="navbar-brand" href="#"><img src="img/logos/datadive500.png" class="img-fluid" style="max-height: 40px;">DataDive</a>
+            <div class="collapse navbar-collapse" id="nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#sponsorship">Sponsors</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Opening Soon!">Register</a>
                     </li>
-                    <!--<li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
-                    </li>-->
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Header -->
     <header id="header" class="intro-header">
-        <div class="container">
-            <div class="intro-message">
-                <h1>DataDive 2017</h1>
-                <h3>An event by ECSESS hosted at McGill University</h3>
-                <hr class="intro-divider">
-                <!--<ul class="list-inline intro-social-buttons">
-                    <li class="list-inline-item">
-                        <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-file-code-o fa-fw"></i> <span class="network-name">Submit Here</span></a>
-                    </li>
-                </ul>
-                <hr class="intro-divider">-->
-                <h3>November 18th-19th, 2017</h3>
-                <h3 id="countdown" class="counter"></h3>
+        <div id="header-text" class="container w-100">
+            <div class="row h-100 header-row">
+                <!--<div class="col-sm-10 my-auto mx-auto intro-message">-->
+                <!--<div class="col-sm-10 my-auto pull-left intro-message">
+                    <img src="img/logos/datadive500.png" class="img-fluid">
+                    <h3 class="text-center">A CodeJam Event</h3>
+                    <h3 class="text-center">November 17th - 19th, 2017</h3>
+                </div>-->
+                <div class="col-sm-10 my-auto intro-message">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h1 class="">CodeJam: DataDive</h1>
+                            <h3 class="">November 17th - 19th, 2017</h3>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="list-inline intro-social-buttons">
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn btn-secondary btn-lg"><!--<i class="fa fa-file-code-o fa-fw"></i>--><span class="network-name">Apply Now</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="down-arrow" class="page-scroll">
+                    <a data-scroll="" href="#down-arrow" style="display:inline-block;">
+                        <svg width="40px" height="40px" viewBox="0 0 40 40" xml:space="preserve">
+                            <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="5,5 20,20 35,5">
+                            </polyline>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
     <!-- Page Content -->
     <!--<div data-spy="scroll" data-target="#main-nav" data-offset="0" class="main-body">-->
     <section id="about">
-        <div class="content-section-a">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading">About DataDive</h2>
-                        <p class="lead">DataDive will give students the opportunity to analyze real world datasets and to use their findings in creative and inventive ways. Students will have the opportunity to apply the insights they are able to uncover in any way they see fit, with the opportunity to justify the creation of a software project or to create a case competition style presentation that aims to solve a problem that the data highlights.</p>
-                    </div>
-                    <div class="col-lg-5 offset-lg-2">
-                        <img class="img-fluid" src="http://via.placeholder.com/350x250" alt="">
-                    </div>
-                </div>
-            </div>
-            <!-- /.container -->
-        </div>
-        <!--</section>
-    <section class="content-section-b">-->
-        <div class="content-section-b">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 push-lg-7">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading">Other things about us<br>with bad breaking text</h2>
-                        <p class="lead">lorem ipsum dolor sit amet <a target="_blank" href="https://mcgilleus.ca/">mcgilleus</a>! McGill engneering udergrad society</p>
-                    </div>
-                    <div class="col-lg-5 pull-lg-5">
-                        <img class="img-fluid" src="http://via.placeholder.com/350x250" alt="">
-                    </div>
-                </div>
-            </div>
-            <!-- /.container -->
-        </div>
-    </section>
-    <!-- /.content-section-b -->
-    <!-- SPONSORS -->
-    <section id="sponsorship" class="content-section-a">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-10 col-md-10 mx-auto">
+                    <h2 class="section-heading text-center">About DataDive</h2>
+                    <p class="lead">CodeJam: DataDive is a data analysis hackathon which allows students to explore large real world datasets and use their findings in creating unique and inventive software projects. Student teams will have the opportunity to choose to participate in one of the three categories <b>Sports</b>, <b>Healthcare</b> and <b>Finance</b>.</p>
+                    <p class="lead">Each category will help to highlight unique challenges related to the industry and allows participants the chance to demonstrate their capabilities for some of the top software companies in the Montreal area.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FAQ-->
+    <section id="faq" class="content-section-a">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 mx-auto">
+                    <h2 class="section-heading text-center">FAQ</h2>
                     <div class="row">
-                        <div class="col-md-2 col-sm-4 col-xs-6">
+                        <div class="col-md-4 col-sm-6">
+                            <h4>I don't have any experience in data analysis, can I still compete?</h4>
+                            <p>Most definitely! The competition is open to programmers of all levels. If you want to build some experience before the competition, checkout our Python workshop on Nov 8th!</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <h4>What is the schedule?</h4>
+                            <p>The event will start Friday night with the opening ceremonies and a company networking event. You are then free from Friday night to Sunday morning to work on your project. Winners will be announced Sunday afternoon after judging!</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <h4>Where is the event held?</h4>
+                            <p>The event will be entirely housed in the Trottier Building. We have booked out all the floors for you to hack away in peace!</p>
+                        </div>
+                        <!--</div>
+                    <div class="row">-->
+                        <div class="col-md-4 col-sm-6">
+                            <h4>Who can attend?</h4>
+                            <p>Any undergraduate or graduate student from McGill and surrounding area are welcome to participate!</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <h4>Is there an entrance fee?</h4>
+                            <p>There will be a small ticket price that grants you entrance and a t-shirt and meals for the weekend!</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <h4>What do I need to bring?</h4>
+                            <p>Your student ID and a laptop! And any chargers and whatever gets you through 36 hours of hacking!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END FAQ-->
+    <!-- SPONSORS -->
+    <section id="sponsorship" class="content-section-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mx-auto">
+                    <h2 class="section-heading text-center">Partners</h2>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3 col-xs-6 mx-auto">
                             <div class="div_that_holds_logo_div">
-                                <!-- lol -->
                                 <div class="logo_div">
-                                    <a href="#" class="" id="" target="_blank"><img class="img-responsive logo" src="http://via.placeholder.com/150x150" alt="logo"></a>
+                                    <a href="https://ecsess.mcgilleus.ca/" class="" id="" target="_blank"><img class="img-responsive logo" src="img/logos/ecsess.png" alt="ecsess"></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
+                        <div class="col-md-6 col-sm-4 col-xs-6 mx-auto">
                             <div class="div_that_holds_logo_div">
                                 <div class="logo_div">
-                                    <a href="#" class="" id="" target="_blank"><img class="img-responsive logo" src="http://via.placeholder.com/150x150" alt="logo"></a>
+                                    <a href="https://www.morganstanley.com/" class="" id="" target="_blank"><img class="img-responsive logo" src="img/logos/morganstanley.png" alt="morganstanley"></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
+                        <div class="col-md-6 col-sm-4 col-xs-6 mx-auto">
                             <div class="div_that_holds_logo_div">
                                 <div class="logo_div">
-                                    <a href="#" class="" id="" target="_blank"><img class="img-responsive logo" src="http://via.placeholder.com/150x150" alt="logo"></a>
+                                    <a href="https://plot.ly/" class="" id="" target="_blank"><img class="img-responsive logo" src="img/logos/plotly.png" alt="plotly"></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
+                        <div class="col-md-2 col-sm-3 col-xs-6 mx-auto">
                             <div class="div_that_holds_logo_div">
                                 <div class="logo_div">
-                                    <a href="#" class="" id="" target="_blank"><img class="img-responsive logo" src="http://via.placeholder.com/150x150" alt="logo"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="div_that_holds_logo_div">
-                                <div class="logo_div">
-                                    <a href="#" class="" id="" target="_blank"><img class="img-responsive logo" src="http://via.placeholder.com/150x150" alt="logo"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="div_that_holds_logo_div">
-                                <div class="logo_div">
-                                    <a href="#" class="" id="" target="_blank"><img class="img-responsive logo" src="http://via.placeholder.com/150x150" alt="logo"></a>
+                                    <a href="https://www.hopper.com/" class="" id="" target="_blank"><img class="img-responsive logo" src="img/logos/hopper.png" alt="hopper"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a href="mailto:sponsor.datadive@mcgilleus.ca" class="btn btn-primary btn-lg">Email Us for Sponsorship Opportunities!</a>
+                    <div class="row">
+                        <!--<div class="col-md-2 col-sm-3 col-xs-6 mx-auto">
+                            <div class="div_that_holds_logo_div">
+                                <div class="logo_div">
+                                    <a href="https://aws.amazon.com/" class="" id="" target="_blank"><img class="img-responsive logo" src="img/logos/aws_small.png" alt="aws"></a>
+                                </div>
+                            </div>
+                        </div>-->
+                        <div class="col-md-2 col-sm-3 col-xs-6 mx-auto">
+                            <div class="div_that_holds_logo_div">
+                                <div class="logo_div">
+                                    <a href="https://ecsess.mcgilleus.ca/" class="" id="" target="_blank"><img class="img-responsive logo" src="img/logos/ecsess.png" alt="ecsess"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6 mx-auto">
+                            <div class="div_that_holds_logo_div">
+                                <div class="logo_div">
+                                    <a href="https://www.hopper.com/" class="" id="" target="_blank"><img class="img-responsive logo" src="img/logos/hopper.png" alt="hopper"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="row">
+                        <div class="col-md-2 col-sm-3 col-xs-6 mx-auto">
+                            <div class="div_that_holds_logo_div">
+                                <div class="logo_div">
+                                    <a href="https://ecsess.mcgilleus.ca/" class="" id="" target="_blank"><img class="img-responsive logo" src="img/logos/ecsess.png" alt="ecsess"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <br>
+                    <div class="row text-center">
+                        <div class="col-md-4 mx-auto">
+                            <h4>Send us a Message</h4>
+                            <a href="mailto:sponsor.datadive@mcgilleus.ca">sponsor.datadive@mcgilleus.ca</a>
+                        </div>
+                    </div>
+                    <!--<a class="btn-lg btn-primary" href="/sponsorship.pdf">View our sponsorship package</a>-->
                 </div>
             </div>
         </div>
@@ -178,49 +242,7 @@
     </section>
     <!-- /.content-section-a -->
     <!-- END SPONSORS -->
-    <!-- CONTACT -->
-    <section id="contact">
-        <div class="container">
-            <!-- Contact Form -->
-            <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-            <div class="row">
-                <div class="col-lg-8 mb-4">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h3>Send us a Message</h3>
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col control-group form-group">
-                                <div class="controls">
-                                    <label>Full Name:</label>
-                                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block"></p>
-                                </div>
-                            </div>
-                            <div class="col control-group form-group">
-                                <div class="controls">
-                                    <label>Email Address:</label>
-                                    <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="control-group form-group">
-                            <div class="controls">
-                                <label>Message:</label>
-                                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
-                            </div>
-                        </div>
-                        <div id="success"></div>
-                        <!-- For success/fail messages -->
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-    </section>
-    <!-- END CONTACT -->
-    <aside class="banner">
+    <!--<aside class="banner">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -238,8 +260,8 @@
                 </div>
             </div>
         </div>
-        <!-- /.container -->
-    </aside>
+        <!-- /.container --
+    </aside>-->
     <!-- /.banner -->
     <!--</div> scroll spy test-->
     <!-- Footer -->
@@ -255,33 +277,17 @@
                 </li>
                 <li class="footer-menu-divider list-inline-item">&sdot;</li>
                 <li class="list-inline-item">
-                    <a href="#sponsorship">Sponsors</a>
+                    <a href="#faq">FAQ</a>
                 </li>
                 <li class="footer-menu-divider list-inline-item">&sdot;</li>
                 <li class="list-inline-item">
-                    <a href="#contact">Contact</a>
+                    <a href="#sponsorship">Sponsors</a>
                 </li>
             </ul>
             <p class="copyright text-muted small">Copyright &copy; DataDive 2017. All Rights Reserved</p>
         </div>
     </footer>
     <script src="dist/main.js"></script>
-    <!--<script type="text/javascript">
-    $(function() {
-        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>-->
 </body>
 
 </html>

@@ -21,8 +21,8 @@
             }
         }
     });
-});*/
-$("a[href^='#']").on('click', function(e) {
+});
+$("#nav ul li a[href^='#']").on('click', function(e) {
 
    // prevent default anchor click behavior
    e.preventDefault();
@@ -30,31 +30,34 @@ $("a[href^='#']").on('click', function(e) {
    // store hash
    var hash = this.hash;
 
-   var navOffset = $('#nav').height();
-
    // animate
    $('html, body').animate({
-       scrollTop: $(hash).offset().top - navOffset
-     }, 600, function(){
+       scrollTop: $(hash).offset().top
+     }, 300, function(){
 
        // when done, add hash to url
        // (default click behaviour)
        window.location.hash = hash;
      });
 
-});
+});*/
 
+
+// @koala-prepend "../../vendor/countdown/jquery.countdown.js"
+$('h3#countdown').countdown("2017/11/17 18:00:00").on('update.countdown', function(event) {
+        var format = '%H:%M:%S';
+        if (event.offset.totalDays > 0) {
+            format = '%-d day%!d ' + format;
+        }
+        if (event.offset.weeks > 0) {
+            format = '%-w week%!w ' + format;
+        }
+        $(this).html(event.strftime(format));
+    })
+    .on('finish.countdown', function(event) {
+        $(this).html('DataDive HAS STARTED!').hide();
+
+    });
 
 //@koala-prepend "../../vendor/particleground/jquery.particleground.js"
-$('#header-text').particleground({
-  dotColor: '#219AFF',
-  lineColor: '#FFFFFF',
-  particleRadius: 5,
-  density: 10000,
-  proximity: 110,
-
-});
-
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip(); 
-});
+$('#header-text').particleground();
