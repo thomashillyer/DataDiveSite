@@ -93,6 +93,9 @@ h6 {
 .section-heading {
     margin-bottom: 30px;
 }
+#sponsorship *.section-heading {
+    margin-bottom: 0;
+}
 
 .section-heading-spacer {
     float: left;
